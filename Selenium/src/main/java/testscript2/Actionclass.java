@@ -10,7 +10,7 @@ public class Actionclass  extends Base{
 	public void doubleclick()
 	{
 		driver.navigate().to("https://selenium.qabible.in/drag-drop.php");
-		WebElement drag1 =driver.findElement(By.xpath(" //span[text()='Draggable n°1']"));
+		WebElement drag1 =driver.findElement(By.xpath("//span[text()='Draggable n°1']"));
 		WebElement drop =driver.findElement(By.xpath(" //div[@id='mydropzone']"));
          Actions actions=new Actions(driver);
          actions.doubleClick(drag1).build().perform();
@@ -45,7 +45,7 @@ public class Actionclass  extends Base{
 		actionclassobj.initializeBrowser();
 		//actionclassobj.doubleclick();
 		//actionclassobj.mousehover();
-		actionclassobj.draganddrop();
+		//actionclassobj.draganddrop();
 		actionclassobj.rightclick();
 		//actionclassobj.driverQuitandClose();
 		
